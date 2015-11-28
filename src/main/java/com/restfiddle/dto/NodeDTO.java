@@ -29,87 +29,110 @@ public class NodeDTO extends BaseDTO {
 
     private Boolean starred;
 
-  //API method type - GET/POST/PUT/DELETE etc.
+    // API method type - GET/POST/PUT/DELETE etc.
     private String method;
-    
+
     private ConversationDTO conversationDTO;
 
     private GenericEntityDTO genericEntityDTO;
 
     private List<TagDTO> tags;
-    
+
     private String apiURL;
 
+    private NodeStatusResponseDTO nodeStatusResponse;
+
+    /**
+     * nodeStatusResponse.
+     * 
+     * @return the nodeStatusResponse
+     * @since JDK 1.7
+     */
+    public NodeStatusResponseDTO getNodeStatusResponse() {
+        return nodeStatusResponse;
+    }
+
+    /**
+     * nodeStatusResponse.
+     * 
+     * @param nodeStatusResponse
+     *            the nodeStatusResponse to set
+     * @since JDK 1.7
+     */
+    public void setNodeStatusResponse(NodeStatusResponseDTO nodeStatusResponse) {
+        this.nodeStatusResponse = nodeStatusResponse;
+    }
+
     public String getProjectId() {
-	return projectId;
+        return projectId;
     }
 
     public void setProjectId(String projectId) {
-	this.projectId = projectId;
+        this.projectId = projectId;
     }
 
     public String getParentId() {
-	return parentId;
+        return parentId;
     }
 
     public void setParentId(String parentId) {
-	this.parentId = parentId;
+        this.parentId = parentId;
     }
 
     public ConversationDTO getConversationDTO() {
-	return conversationDTO;
+        return conversationDTO;
     }
 
     public void setConversationDTO(ConversationDTO conversationDTO) {
-	this.conversationDTO = conversationDTO;
+        this.conversationDTO = conversationDTO;
     }
 
     public String getNodeType() {
-	return nodeType;
+        return nodeType;
     }
 
     public void setNodeType(String nodeType) {
-	this.nodeType = nodeType;
+        this.nodeType = nodeType;
     }
 
     public Long getPosition() {
-	return position;
+        return position;
     }
 
     public void setPosition(Long position) {
-	this.position = position;
+        this.position = position;
     }
 
     public Boolean getStarred() {
-	return starred;
+        return starred;
     }
 
     public void setStarred(Boolean starred) {
-	this.starred = starred;
+        this.starred = starred;
     }
 
     public List<TagDTO> getTags() {
-	return tags;
+        return tags;
     }
 
     public void setTags(List<TagDTO> tags) {
-	this.tags = tags;
+        this.tags = tags;
     }
 
     public GenericEntityDTO getGenericEntityDTO() {
-	return genericEntityDTO;
+        return genericEntityDTO;
     }
 
     public void setGenericEntityDTO(GenericEntityDTO genericEntityDTO) {
-	this.genericEntityDTO = genericEntityDTO;
+        this.genericEntityDTO = genericEntityDTO;
     }
 
     public String getMethod() {
-	return method;
+        return method;
     }
 
     public void setMethod(String method) {
-	this.method = method;
+        this.method = method;
     }
 
     public String getApiURL() {
@@ -118,6 +141,19 @@ public class NodeDTO extends BaseDTO {
 
     public void setApiURL(String apiURL) {
         this.apiURL = apiURL;
+    }
+
+    /**
+     * TODO
+     * 
+     * @see java.lang.Object#toString()
+     */
+    @Override
+    public String toString() {
+        return "NodeDTO [nodeType=" + nodeType + ", parentId=" + parentId + ", position=" + position + ", projectId="
+                + projectId + ", starred=" + starred + ", method=" + method + ", conversationDTO=" + conversationDTO
+                + ", genericEntityDTO=" + genericEntityDTO + ", tags=" + tags + ", apiURL=" + apiURL
+                + ", nodeStatusResponse=" + nodeStatusResponse + "]";
     }
 
 }
