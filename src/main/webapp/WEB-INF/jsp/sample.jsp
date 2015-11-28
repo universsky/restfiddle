@@ -1,3 +1,4 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -5,10 +6,10 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RESTFiddle</title>
+<title>Rest API</title>
 <link rel="shortcut icon" href="/favicon.ico" />
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/ui.fancytree.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 

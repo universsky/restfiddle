@@ -1,3 +1,4 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -5,7 +6,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RESTFiddle</title>
+<title>Rest API</title>
 <link rel="shortcut icon" href="/favicon.ico" />
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,32 +27,39 @@
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">RESTFiddle</a>
+				<a class="navbar-brand" href="#">RestAPI</a>
 			</div>
 		</div>
 	</div>
 	<div class="container-fluid">
-		<form class="form-signin" action='${pageContext.request.contextPath}/login' method='POST'>
-			<h2 class="form-signin-heading">RESTFiddle</h2>
+		<form class="form-signin"
+			action='${pageContext.request.contextPath}/login' method='POST'>
+			<h2 class="form-signin-heading">RestAPI</h2>
 
 			<div class="input-group" style="margin-bottom: 5px;">
-			  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-			  <input type="text" name="username" class="form-control" placeholder="Enter Email" required autofocus>
+				<span class="input-group-addon"><i
+					class="fa fa-envelope-o fa-fw"></i></span> <input type="text"
+					name="username" class="form-control" placeholder="Enter Email"
+					required autofocus>
 			</div>
 			<div class="input-group" style="margin-bottom: 5px;">
-			  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-			  <input type="password" name="password" class="form-control" style="margin-bottom: 0px;" placeholder="Enter Password" required>
-			</div>			
-			
-			<button class="btn btn-primary btn-block" type="submit">Sign in to RESTFiddle</button>
+				<span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+				<input type="password" name="password" class="form-control"
+					style="margin-bottom: 0px;" placeholder="Enter Password" required>
+			</div>
+
+			<button class="btn btn-primary btn-block" type="submit">登陆</button>
 		</form>
 	</div>
 
 	<script>
-	var ctx = "${pageContext.request.contextPath}";
-    </script>
+		var ctx = "${pageContext.request.contextPath}";
+	</script>
 </body>
 </html>
