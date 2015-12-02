@@ -193,7 +193,7 @@
 					</div>
 					<ul class="nav nav-tabs reponse-pannel-ul">
 						<li class="active"><a href="#tab-body" data-toggle="tab">Raw</a></li>
-						<li><a href="#tab-form" data-toggle="tab">Form</a></li>
+						<!-- <li><a href="#tab-form" data-toggle="tab">Form</a></li>  -->
 						<li><a href="#tab-file" data-toggle="tab">Files</a></li>
 						<li><a href="#tab-query" data-toggle="tab">Query</a></li>
 						<li><a href="#tab-header" data-toggle="tab">Header</a></li>
@@ -373,10 +373,52 @@
 			<hr>
 
 			<div>
+			
+			
+			
+			<div class="clearfix">
+					<p>
+						<span id="responseToggle"
+							class='glyphicon glyphicon glyphicon-chevron-down'></span>&nbsp;&nbsp;<b>测试结果</b>
+					</p>
+				</div>
+				
+				<ul class="nav nav-tabs">
+						<li><a href="#res-tab-assert" data-toggle="tab">Asserts <span
+								id="assertResultCount" class="badge">0/0</span></a></li>
+					</ul>
+			
+			<div class="tab-pane" id="res-tab-assert">
+							<div>
+								<br>
+								<p>
+								<div class="success-icon circle"></div>
+								<span>0</span>
+							        通过&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<div class="failure-icon circle"></div>
+								<span>0</span> 失败
+								</p>
+								<table id="res-assert-wrapper" class="table">
+									<thead>
+										<tr>
+											<th>运行状态</th>
+											<th>表达式</th>
+											<th>运算符</th>
+											<th>期望输出</th>
+											<th>实际输出</th>
+										<tr>
+									</thead>
+								</table>
+							</div>
+							<br>
+							<br>
+						</div>
+			
+			
 				<div class="clearfix">
 					<p>
 						<span id="responseToggle"
-							class='glyphicon glyphicon glyphicon-chevron-down'></span>&nbsp;&nbsp;<b>Response</b>
+							class='glyphicon glyphicon glyphicon-chevron-down'></span>&nbsp;&nbsp;<b>输出响应</b>
 					<div class="pull-right">
 						&nbsp;&nbsp;<span>Status : </span><span id="status-code"></span>&nbsp;&nbsp;<span>Time
 							: <span id="req-time"></span> ms
@@ -386,14 +428,14 @@
 					</div>
 					</p>
 				</div>
+				
 
 				<div id="responseContainer">
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#res-tab-body" data-toggle="tab">Body</a></li>
 						<li><a href="#res-tab-preview" data-toggle="tab">Preview</a></li>
 						<li><a href="#res-tab-header" data-toggle="tab">Header</a></li>
-						<li><a href="#res-tab-assert" data-toggle="tab">Asserts <span
-								id="assertResultCount" class="badge">0/0</span></a></li>
+						 
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane active" id="res-tab-body">
@@ -425,31 +467,7 @@
 							<br>
 							<br>
 						</div>
-						<div class="tab-pane" id="res-tab-assert">
-							<div>
-								<br>
-								<p>
-								<div class="success-icon circle"></div>
-								<span>0</span>
-								Success&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<div class="failure-icon circle"></div>
-								<span>0</span> Failure
-								</p>
-								<table id="res-assert-wrapper" class="table">
-									<thead>
-										<tr>
-											<th>Status</th>
-											<th>Expression</th>
-											<th>Comparator</th>
-											<th>Expected</th>
-											<th>Actual</th>
-										<tr>
-									</thead>
-								</table>
-							</div>
-							<br>
-							<br>
-						</div>
+						
 					</div>
 				</div>
 			</div>

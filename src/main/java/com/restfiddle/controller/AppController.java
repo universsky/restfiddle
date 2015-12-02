@@ -35,7 +35,7 @@ public class AppController {
     Logger logger = LoggerFactory.getLogger(AppController.class);
 
     @Value("${application.message:REST Fiddle}")
-    private String message = "REST Fiddle";
+    private String message = "REST API";
 
     @RequestMapping("/")
     public String home(Map<String, Object> model) {

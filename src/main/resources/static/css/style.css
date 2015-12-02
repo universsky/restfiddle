@@ -228,7 +228,7 @@ ul.fancytree-container {
 	height: 95%;
 	position: fixed; 
 	overflow-y: hidden;
-	width:33%;
+	width:23%;
 	z-index: -1;
 	padding-left:0px;
 	padding-right:0px;
@@ -239,7 +239,7 @@ ul.fancytree-container {
 }
 
 .rf-col-3 {
-	left: 50%; 
+	left: 40%; 
 	height: 100%; 
 	overflow-y: hidden;
 	position: fixed;
