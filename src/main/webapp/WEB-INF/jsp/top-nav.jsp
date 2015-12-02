@@ -34,7 +34,7 @@
 						data-target="#globalSettingsModal">设置</a></li>
 				</ul>
 			</div>
-			<a class="navbar-brand" href="#">Rest API</a>
+			<a class="navbar-brand" href="#">挖财接口测试平台 Rest API</a>
 		</div>
 		<div class="navbar-collapse collapse collapse" aria-expanded="false">
 			<ul class="nav navbar-nav navbar-right">
